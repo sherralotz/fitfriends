@@ -1,0 +1,81 @@
+.container {
+    width: 100%;
+    padding: 20px;
+  }
+  .calendar-header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 equal columns */
+    margin-bottom: 10px;
+  }
+  
+  .day-header {
+    font-weight: bold;
+    text-align: center;
+    background-color: #f7f7f7;
+  }
+  
+  
+  .calendar-grid { /* Consistent class name */
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 equal columns */
+    grid-gap: 10px;
+  }
+  
+  .day-cell { /* Consistent class name */
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box; 
+    padding: 10px;
+    border: 1px solid #ccc; /* Add a default border */
+  }
+  
+  .day-name { /* Style for the day name (e.g., "Sun", "Mon") */
+      font-weight: bold;
+  }
+  
+  .day-number { /* Style for the day number (e.g., "1", "2") */
+      font-size: 1.2rem;
+  }
+  .wod-content {
+    white-space: pre-wrap; /* Key CSS property */
+    /* Add any other styling you want for the WOD content */
+    font-family: monospace; /* Optional: Use a monospace font */
+  }
+  
+  /* Media query for larger screens (web view) */
+  @media (min-width: 768px) {
+    .calendar-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 5px;
+      flex-wrap: nowrap; /* Important for grid layout */
+    }
+  
+    .day-cell {
+      width: auto; /* Reset width for grid */
+      margin: 0; /* Reset margins for grid */
+    }
+  
+      .day-cell:nth-child(7n + 1) { /* Style for the first day of the week (Sun) */
+          border-left: 2px solid black; /* Example styling */
+      }
+      .day-cell:nth-child(7n) { /* Style for the last day of the week (Sat) */
+          border-right: 2px solid black; /* Example styling */
+      }
+  }
+  
+  /* Media query for smaller screens (mobile view) */
+  @media (max-width: 767px) {
+    .day-cell {
+      /* width: calc(100% / 7); */
+      margin: 1px;
+    }
+    .container{
+        padding: 0;
+    }
+    .calendar-grid{
+        grid-gap: 0;
+    }
+  }
+  
+  /* ... other styles ... */

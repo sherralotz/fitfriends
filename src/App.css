@@ -1,0 +1,18 @@
+nav svg {
+    width: 1.5em;
+}
+aside{
+    width: 15em;
+}
+
+/* --- Global ----*/
+
+nav .nav-text-disabled, nav .nav-text-disabled:hover{
+    color: #656565;
+    cursor: not-allowed;
+    pointer-events: none;
+} 
+
+.btn-group li:hover{
+    cursor: pointer;
+}
