@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build && npm version patch",
+    "predeploy": "npm version patch && git add package.json package-lock.json && git commit -m \"Bumped version\"",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
