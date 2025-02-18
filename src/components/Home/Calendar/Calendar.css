@@ -37,9 +37,9 @@
       font-size: 1.2rem;
   }
   .wod-content {
-    white-space: pre-wrap; /* Key CSS property */
-    /* Add any other styling you want for the WOD content */
-    font-family: monospace; /* Optional: Use a monospace font */
+    white-space: pre-wrap; 
+    max-height: 60vh;
+    font-family: monospace;  
   }
   
   /* Media query for larger screens (web view) */
@@ -78,4 +78,8 @@
     }
   }
   
-  /* ... other styles ... */
+@media (max-width: 767px) { 
+  .wod-content{ 
+      max-height: 50vh;
+  }
+}

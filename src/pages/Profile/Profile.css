@@ -12,23 +12,28 @@
     margin-bottom: 20px; /* Space between header and content */
   }
   
-  .profile-picture {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%; /* Make the image circular */
-    overflow: hidden; /* Hide any overflowing image content */
-    margin-right: 20px;
+  .profile-picture {    
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;  
+    overflow: hidden;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ddd; 
+    margin-right: 15px;
   }
   
   .profile-picture img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Cover the entire circle */
+    object-fit: cover; 
   }
+  
   
   .profile-info {
     display: flex;
-    flex-direction: column; /* Arrange name and gym vertically */
+    flex-direction: column; 
   }
   
   .profile-name {
@@ -39,17 +44,13 @@
   
   .profile-gym {
     font-size: 1rem;
-    color: #777; /* Slightly lighter color */
+    color: #777; 
   }
-  
-  .profile-content {
-      /* Style content as needed */
-  }
-  
+   
   .content-grid {
       display: grid;
-      grid-template-columns: repeat(1, 1fr); /* 3 equal columns */
-      gap: 10px; /* Spacing between grid items */
+      grid-template-columns: repeat(1, 1fr); 
+      gap: 10px; 
   }
   
   .content-grid img {

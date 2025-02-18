@@ -1,0 +1,152 @@
+[  
+  {
+    "name": "Bench Press",
+    "muscleGroups": ["Chest", "Shoulders", "Triceps"],
+    "equipment": ["Barbell"],
+    "variations": ["Incline Bench Press", "Decline Bench Press"]
+  },
+  {
+    "name": "Pull-ups",
+    "muscleGroups": ["Back", "Biceps"],
+    "equipment": ["Bodyweight"],
+    "variations": ["Chin-ups", "Kipping Pull-ups"]
+  },
+  {
+    "name": "Dumbbell Rows",
+    "muscleGroups": ["Back", "Biceps"],
+    "equipment": ["Dumbbells"],
+    "variations": ["Bent-Over Rows", "Seated Cable Rows"]
+  },
+  {
+    "name": "Clean",
+    "muscleGroups": ["Full Body"],
+    "equipment": ["Barbell"],
+    "variations": ["Power Clean", "Squat Clean"]
+  },
+  {
+    "name": "Snatch",
+    "muscleGroups": ["Full Body"],
+    "equipment": ["Barbell"],
+    "variations": ["Power Snatch", "Squat Snatch"]
+  },
+  {
+    "name": "Thruster",
+    "muscleGroups": ["Full Body"],
+    "equipment": ["Barbell"],
+    "variations": ["Dumbbell Thruster"]
+  },
+  {
+    "name": "Burpees",
+    "muscleGroups": ["Full Body"],
+    "equipment": ["Bodyweight"],
+    "variations": []
+  },
+  {
+    "name": "Box Jumps",
+    "muscleGroups": ["Legs"],
+    "equipment": ["Box"],
+    "variations": []
+  },
+  {
+    "name": "Kettlebell Swings",
+    "muscleGroups": ["Hamstrings", "Glutes"],
+    "equipment": ["Kettlebell"],
+    "variations": ["American Kettlebell Swing"]
+  },
+  {
+    "name": "Wall Balls",
+    "muscleGroups": ["Full Body"],
+    "equipment": ["Medicine Ball"],
+    "variations": []
+  },
+  {
+    "name": "Double-Unders",
+    "muscleGroups": ["Calves", "Cardio"],
+    "equipment": ["Jump Rope"],
+    "variations": []
+  },
+  {
+    "name": "Muscle-Ups",
+    "muscleGroups": ["Full Body"],
+    "equipment": ["Rings", "Bar"],
+    "variations": []
+  },
+  {
+    "name": "Handstand Push-ups",
+    "muscleGroups": ["Shoulders", "Triceps"],
+    "equipment": ["Bodyweight"],
+    "variations": []
+  },
+  {
+    "name": "Pistol Squats",
+    "muscleGroups": ["Legs"],
+    "equipment": ["Bodyweight"],
+    "variations": []
+  },
+  {
+    "name": "Lunge",
+    "muscleGroups": ["Quads", "Glutes", "Hamstrings"],
+    "equipment": ["Bodyweight", "Dumbbells"],
+    "variations": ["Walking Lunge", "Reverse Lunge"]
+  },
+  {
+    "name": "Glute-Ham Raise (GHR)",
+    "muscleGroups": ["Hamstrings", "Glutes"],
+    "equipment": ["GHR Machine"],
+    "variations": []
+  },
+  {
+    "name": "Back Extension",
+    "muscleGroups": ["Lower Back"],
+    "equipment": ["Back Extension Machine"],
+    "variations": []
+  },
+  {
+    "name": "Rowing",
+    "muscleGroups": ["Back", "Legs"],
+    "equipment": ["Rowing Machine"],
+    "variations": []
+  },
+  {
+    "name": "Running",
+    "muscleGroups": ["Legs", "Cardio"],
+    "equipment": ["None"],
+    "variations": ["Sprinting", "Long Distance Running"]
+  },
+  {
+    "name": "Swimming",
+    "muscleGroups": ["Full Body"],
+    "equipment": ["None"],
+    "variations": []
+  },
+  {
+    "name": "Yoga",
+    "muscleGroups": ["Full Body", "Flexibility"],
+    "equipment": ["None"],
+    "variations": ["Vinyasa Yoga", "Hatha Yoga"]
+  },
+  {
+    "name": "Pilates",
+    "muscleGroups": ["Core", "Flexibility"],
+    "equipment": ["None", "Mat"],
+    "variations": []
+  },
+  {
+    "name": "Dumbbell Bench Press",
+    "muscleGroups": ["Chest", "Shoulders", "Triceps"],
+    "equipment": ["Dumbbells"],
+    "variations": ["Incline Dumbbell Bench Press"]
+  },
+  {
+    "name": "Dumbbell Shoulder Press",
+    "muscleGroups": ["Shoulders", "Triceps"],
+    "equipment": ["Dumbbells"],
+    "variations": ["Arnold Press"]
+  },
+  {
+    "name": "Dumbbell Bicep Curl",
+    "muscleGroups": ["Biceps"],
+    "equipment": ["Dumbbells"],
+    "variations": ["Hammer Curl"]
+  }
+]

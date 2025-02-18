@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react"; 
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../../config/firebase-config";
-import { useNavigate } from "react-router-dom"; 
-import Calendar from "../../components/Calendar/Calendar";
+import { useNavigate } from "react-router-dom";  
 import "./Home.css"; 
+import Calendar from "../../components/Home/Calendar/Calendar";
 
 const Home: React.FC = () => {
   const [loading, setLoading] = useState(true);

@@ -38,7 +38,7 @@ F - 55lbs, 65lbs, Jumping Pull Ups
 RX:
 M - 95lbs, 135lbs
 F - 65lbs, 95lbs
-    `, date: "2-10-25" },  
+    `, date: "2-17-25" },  
     { content: `
 SKILL/STRENGTH
 AMRAP 12mins
@@ -67,5 +67,5 @@ Equipment
 
 Scaled: 16/12kg
 RX: 24/16kg
-    `, date: "2-11-25" },  
+    `, date: "2-18-25" },  
 ];

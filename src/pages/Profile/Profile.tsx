@@ -1,7 +1,6 @@
 import React from "react";
 import "./Profile.css";
 import { useAuth } from "../../utils/authContext";
-import "bootstrap/dist/js/bootstrap.bundle.min.js"; // Import Bootstrap JS
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { auth } from "../../config/firebase-config";
@@ -22,6 +21,7 @@ const Profile: React.FC = () => {
   if (!user || !userDocData) {
     return <div>Please log in or create a profile.</div>; // Handle the case where the user is not logged in or data is not available
   }
+ 
 
   const handleSignOut = () => {
     // Renamed for clarity
@@ -45,8 +45,9 @@ const Profile: React.FC = () => {
             <div className="profile-header d-flex">
               <div className="profile-picture">
                 <img
-                  src="https://dummyimage.com/150" // Placeholder image URL
-                  alt="Profile"
+                  src={user.photoURL ? user.photoURL : ""}  
+                  alt="Profile pic"
+                   referrerPolicy="no-referrer"
                 />
               </div>
               <div className="profile-info">
@@ -65,10 +66,10 @@ const Profile: React.FC = () => {
                 </button>
                 <ul className="dropdown-menu">
                   {/* <li>
-          <a className="dropdown-item" href="#">
-            Settings
-          </a>
-        </li> */}
+                    <a className="dropdown-item" onClick={()=>navigate("/admin-manage")}>
+                      Admin
+                    </a>
+                  </li> */}
                   <li>
                     <a className="dropdown-item" onClick={handleSignOut}>
                       Sign Out

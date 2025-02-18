@@ -1,7 +1,7 @@
 // src/components/Sidebar.tsx
-import { Link, useLocation } from "react-router-dom";
-import { pages } from "../../config/pages";
+import { Link, useLocation } from "react-router-dom"; 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { pages } from "../../../config/pages";
 
 const Sidebar: React.FC = () => {
   const location = useLocation();

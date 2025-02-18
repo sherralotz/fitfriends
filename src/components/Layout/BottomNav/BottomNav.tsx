@@ -1,6 +1,6 @@
 // src/components/BottomNav.tsx
 import { Link, useLocation } from "react-router-dom";
-import { pages } from "../../config/pages";
+import { pages } from "../../../config/pages";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const BottomNav: React.FC = () => {

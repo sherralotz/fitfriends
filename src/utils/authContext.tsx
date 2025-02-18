@@ -1,4 +1,3 @@
-// authContext.tsx (or auth/authContext.tsx)
 import React, { createContext, useState, useEffect, useContext } from "react";
 
 import { onAuthStateChanged, User } from "firebase/auth"; // Import User type

@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import moment from "moment";
 import type { Moment } from "moment";
-import { extendMoment } from "moment-range";
-import { wod } from "../../config/wod";
+import { extendMoment } from "moment-range"; 
 import "./Calendar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
-
+import {
+  faChevronDown,
+  faChevronUp,
+  faPlus, 
+} from "@fortawesome/free-solid-svg-icons";  
+import { wod } from "../../../config/wod";
+import { useNavigate } from "react-router-dom";
+ 
 const Moment = extendMoment(moment);
 
 const Calendar: React.FC = () => {
@@ -16,7 +21,10 @@ const Calendar: React.FC = () => {
     return date.clone().startOf("week").add(1, "day");
   };
 
-  const generateDays = (currentDate: DateType, viewMode: "week" | "month"): DateType[] => {
+  const generateDays = (
+    currentDate: DateType,
+    viewMode: "week" | "month"
+  ): DateType[] => {
     const startOfWeek = getStartOfWeek(currentDate);
     const days: DateType[] = [];
 
@@ -24,11 +32,13 @@ const Calendar: React.FC = () => {
       for (let i = 0; i < 7; i++) {
         days.push(startOfWeek.clone().add(i, "days"));
       }
-    } else { // Month view
+    } else {
+      // Month view
       const startOfMonth = currentDate.clone().startOf("month");
       let currentDay = getStartOfWeek(startOfMonth);
 
-      for (let i = 0; i < 35; i++) { // 5 weeks
+      for (let i = 0; i < 35; i++) {
+        // 5 weeks
         days.push(currentDay.clone());
         currentDay.add(1, "day");
       }
@@ -48,6 +58,8 @@ const Calendar: React.FC = () => {
     const formattedWodDate = wodDateMoment.format("MM-DD-YY");
     return formattedWodDate === formattedSelectedDate;
   });
+  const navigate = useNavigate();
+
 
   const handleDateClick = (date: Moment) => {
     setSelectedDate(date);
@@ -63,7 +75,7 @@ const Calendar: React.FC = () => {
           className="btn btn-outline-primary ms-auto"
           onClick={() => setViewMode(viewMode === "week" ? "month" : "week")}
         >
-          <span className="">    {currentDate.format("MMMM")} </span> 
+          <span className=""> {currentDate.format("MMMM")} </span>
           {viewMode === "week" ? (
             <FontAwesomeIcon icon={faChevronDown} size="xs" />
           ) : (
@@ -95,6 +107,25 @@ const Calendar: React.FC = () => {
       </div>
 
       <div className="mt-4">
+        <div className="d-flex">
+          <div className="btn-group ms-auto">
+            <button
+              type="button"
+              className="btn  btn-outline-secondary dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <FontAwesomeIcon icon={faPlus} size="xs" /> Create
+            </button>
+            <ul className="dropdown-menu"> 
+              <li>
+                <a className="dropdown-item" onClick={()=> navigate("/create-workout")}>
+                  Workout
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
         <h4>{selectedDate.format("dddd, MMM D")}</h4>
 
         <div>
