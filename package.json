@@ -2,16 +2,15 @@
   "homepage": "https://sherralotz.github.io/fitfriends/",
   "name": "fitfriends",
   "private": true,
-  "version": "0.1.5",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite --open /fitfriends/",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "clean": "rimraf dist",
-    "predeploy": "npm run clean && npm run build && npm version patch && git rm --cached -r . && git reset --hard HEAD && git add . && git commit -m \"Bumped version\"",
-    "deploy": "gh-pages -d dist && git push origin main && git push origin gh-pages"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
@@ -43,7 +42,6 @@
     "eslint-plugin-react-refresh": "^0.4.18",
     "gh-pages": "^6.3.0",
     "globals": "^15.14.0",
-    "rimraf": "^6.0.1",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.22.0",
     "vite": "^6.1.0",
