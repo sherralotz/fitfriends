@@ -2,14 +2,14 @@
   "homepage": "https://sherralotz.github.io/fitfriends/",
   "name": "fitfriends",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "scripts": {
     "dev": "vite --open /fitfriends/",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "git add package.json && git commit -m \"Bumped version\" &&  npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
