@@ -2,7 +2,7 @@
   "homepage": "https://sherralotz.github.io/fitfriends/",
   "name": "fitfriends",
   "private": true,
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
   "scripts": {
     "dev": "vite --open /fitfriends/",
