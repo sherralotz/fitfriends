@@ -2,7 +2,7 @@
   "homepage": "https://sherralotz.github.io/fitfriends/",
   "name": "fitfriends",
   "private": true,
-  "version": "0.1.3",
+  "version": "0.1.4",
   "type": "module",
   "scripts": {
     "dev": "vite --open /fitfriends/",
@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "clean": "rimraf dist",
     "predeploy": "npm run clean && npm run build && npm version patch && git rm --cached -r . && git reset --hard HEAD && git add . && git commit -m \"Bumped version\"",
-    "deploy": "gh-pages -d dist && git push origin main && git push origin gh-pages" 
+    "deploy": "gh-pages -d dist && git push origin main && git push origin gh-pages"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
