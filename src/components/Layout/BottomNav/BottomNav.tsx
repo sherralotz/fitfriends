@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const BottomNav: React.FC = () => {
   const location = useLocation(); 
   return (
-    <nav className="d-md-none fixed-bottom bg-dark text-white p-2 nav-bottom">
+    <nav className="d-md-none fixed-bottom bg-dark text-white p-2">
       <div className="container d-flex justify-content-around">
         {pages.map((page) => (
           <Link

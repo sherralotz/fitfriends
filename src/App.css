@@ -59,13 +59,13 @@ table th{
     overflow-y: auto;
   }
 @supports (padding: env(safe-area-inset-bottom,0)) {
-    .nav-bottom {
+    .x1jeouym.x1jeouym {
         padding-bottom: env(safe-area-inset-bottom);
     }
 }
 
 @supports (padding: env(safe-area-inset-bottom,0)) {
-    .nav-bottom {
+    nav {
         background-color: red;
     }
 }
