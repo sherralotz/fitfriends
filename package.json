@@ -9,8 +9,9 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build && npm version patch && git add package.json package-lock.json && git commit -m \"Bumped version\"",
-    "deploy": "gh-pages -d dist"
+    "clean": "rimraf dist",
+    "predeploy": "npm run clean && npm run build && npm version patch && git rm --cached -r . && git reset --hard HEAD && git add . && git commit -m \"Bumped version\"",
+    "deploy": "gh-pages -d dist && git push origin main && git push origin gh-pages" 
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
