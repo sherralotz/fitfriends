@@ -3,7 +3,7 @@
 }
 
 .table-container {
-    max-height: 600px; /* Adjust based on your layout */
+    max-height: 70vh;
     overflow-y: auto;
     border: 1px solid #ddd;
     border-radius: 8px;
